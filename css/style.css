@@ -651,7 +651,8 @@ p.about-text {
 /* CHECKOUT PAGE */
 .checkout-container {
     display: flex;
-    margin-top: 7rem
+    margin-top: 7rem;
+    margin-bottom: 7rem;
 }
 .checkout-wrap {
     max-width: 800px;
