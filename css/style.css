@@ -378,7 +378,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: "Roboto", sans-serif;
+    font-family: "Epilogue", sans-serif;
     letter-spacing: 1px;
 }
 .cart-content-container {
@@ -515,6 +515,9 @@ label.radio input:checked+span {
     display: flex;
     justify-content: space-between;
 }
+.total span {
+    font-weight: 700;
+}
 .check-btn-container {
     display: flex;
     justify-content: center;
@@ -567,7 +570,7 @@ label.radio input:checked+span {
 }
 
 .price {
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Epilogue", sans-serif;
     font-size: 22px;
     font-weight: 800;
 }
