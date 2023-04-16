@@ -1,6 +1,10 @@
 /* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/cascadia-code');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Mitr&display=swap');
+
+
 /* MOBILE FIRST */
 
 /* Global Styles */
@@ -13,7 +17,7 @@
 body {
     background-color: #090323;
     color: white;
-    font-family: "Cascadia Mono", sans-serif;
+    font-family: "Epilogue", sans-serif;
     min-height: 100vh;
     display: grid;
     grid-template-rows: 1fr auto;
@@ -49,13 +53,15 @@ body {
 }
 
 .btn {
-    font-family: 'Cascadia Mono', cursive;
+    font-family: 'Epilogue', sans-serif;
     font-size: 16px; 
+    font-weight: 600;
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 2px 2px 8px rgb(0, 0, 0);
     background-color: #dedede;
     color: #000;
+    border: none;
 }
 .btn:hover {
     background-color: #bebebe;
@@ -124,9 +130,7 @@ body {
     text-decoration: none;
     text-shadow: 3px 3px 6px black;
 }
-.navbar a:hover {
-    font-weight: bold;
-}
+
 .nav-list {
     background-color: #1d1252;
     list-style-type: none;
@@ -169,7 +173,7 @@ body {
     display: none;
 }
 .mobile-cart-wrap{
-    margin-right: 20px;
+    margin-right: 15px;
 }
 .fa-shopping-cart {
     color: white;
@@ -198,11 +202,9 @@ body {
     font-size: 16pt;
     margin-top: 0;
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
     #searchBar {
-        margin-bottom: 20px;
-        margin-top: 15px;
-        margin-left: 20px;
+        margin-left: 15px;
     }
     .mobile-search {
         flex-direction: row;
@@ -228,7 +230,7 @@ body {
 }
 .landing-btn {
     padding: 8px 12px;
-    font-weight: 600;
+    font-weight: 900;
     letter-spacing: 1px;
     margin-left: 5px;
     margin-right: 5px;
@@ -243,6 +245,7 @@ body {
 #sell-btn {
     background-color: transparent;
     color: white;
+    border: 2px solid #dedede;
 }
 #sell-btn:hover {
     background-color: #dedede;
@@ -257,7 +260,8 @@ body {
     font-size: 16px;
     font-weight: lighter;
     font-style: italic;
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 200;
     text-shadow: 1px 1px 2px black;
 }
 
@@ -303,6 +307,12 @@ main {
     padding: 4px 6px;
     font-weight: 600;
     font-size: 16px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #dedede;
+}
+.heading-btn:hover {
+    color: #000;
 }
 .game-img {
     width: 100%;
@@ -310,21 +320,20 @@ main {
 }
 .game-spec {
     text-align: center;
+    margin-top: 10px;
 }
 .game-title,
 .game-price {
     font-size: 16px;
+    font-weight: 500;
 }
 .game-price {
     margin: 10px 0 5px 0;
 }
-.game-title {
-    font-weight: 400;
-}
 .game-btn {
-    padding: 4px 0 4px 0;
+    padding: 7px 0 7px 0;
     width: 100%;
-    font-weight: bold;
+    font-weight: 700;
     border-radius: 3px;
 }
 
@@ -509,7 +518,7 @@ label.radio input:checked+span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px;
+    padding: 12px;
     border-radius: 8px;
     border: none;
     width: 100%;
@@ -517,7 +526,7 @@ label.radio input:checked+span {
 
 }
 .fa-arrow-right {
-    color: white;
+    color: #000;
     font-size: 16px;
     margin: 0 0 0 5px;
 }
@@ -556,9 +565,10 @@ label.radio input:checked+span {
 }
 
 .game-desc {
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Epilogue", sans-serif;
     margin-top: 3rem;
     text-shadow: 1px 1px 2px black;
+    font-weight: 300;
 }
 .game-desc p {
     font-size: 16px;
@@ -591,6 +601,9 @@ label.radio input:checked+span {
     text-align: center;
     font-size: 16px;
 }
+.contact-icon {
+    height: 80px;
+}
 .flex-group {
     margin: 0 10px 30px 10px;
 }
@@ -609,13 +622,15 @@ label.radio input:checked+span {
 }
 .about-wrap {
     margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 p.about-text {
     white-space: pre-line;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 1px;
-    font-family: "Readex Pro", sans-serif;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 300;
 }
 
 
@@ -863,6 +878,9 @@ i {
     .contact-icons-flex {
         flex-direction: row;
     }
+    .contact-icon {
+        height: 120px;
+    }
     .flex-group {
             width: 200px;
     }
@@ -899,6 +917,10 @@ i {
     }
     .game-img {
         max-width: none;
+    }
+    /* DESKTOP ABOUT PAGE */
+    p.about-text {
+        font-size: 18px;
     }
 }
 
