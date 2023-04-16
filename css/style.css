@@ -33,6 +33,11 @@ body {
 
 }
 
+.game-link {
+    text-decoration: none;
+    color: white;
+}
+
 .form-half-col,
 .form-col,
 .payment-radio,
@@ -74,7 +79,7 @@ body {
 
 /* LANDING PAGE */
 #landing-bg {
-    background-image: url(/images/spacegameuniverse-mobile.jpg);
+    background-image: url(/images/compressed/spacegameuniverse-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -782,10 +787,7 @@ i {
 @media (min-width: 960px) {
     /* Desktop Background */
     #landing-bg {
-        /* background-image: url(/images/spacegameuniverse.jpg); */
-        background-image: url(/images/game-controller.jpg);
-        /* min-width: 100%;
-        min-height: 100vh; */
+        background-image: url(/images/compressed/game-controller.png);
     }
 
     /* Desktop Navigation Bar */
