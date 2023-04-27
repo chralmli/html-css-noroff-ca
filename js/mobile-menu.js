@@ -1,8 +1,8 @@
 const toggleButton = document.getElementById("toggleButton");
-const navList = document.getElementById("navList");
+const navWrap = document.getElementById("navWrap");
 
 toggleButton.addEventListener("click", () => {
-    navList.classList.toggle("active");
+    navWrap.classList.toggle("active");
 })
 
 const navbar = document.querySelector('.navbar-fixed');

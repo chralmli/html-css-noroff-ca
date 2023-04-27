@@ -15,21 +15,24 @@
           <div id="logo-wrap">
             <a href="index.html"><img src="/images/gamehub-white-logo.png" id="logo" alt="Gamehub Logo"></a>
           </div>
-          <ul class="nav-list" id="navList">
-            <a href="index.html"><li class="list-item">Home</li></a>
-            <a href="games.html"><li class="list-item">Games</li></a>
-            <a href="about.html"><li class="list-item">About</li></a>
-            <a href="contact.html"><li class="list-item">Contact</li></a>
+          <div id="navWrap">
+            <ul class="nav-list" id="navList">
+              <li class="list-item"><a href="index.html">Home</a></li>
+              <li class="list-item"><a href="games.html">Games</a></li>
+              <li class="list-item"><a href="about.html">About</a></li>
+              <li class="list-item"><a href="contact.html">Contact</a></li>
+            </ul>
             <div class="mobile-search">
               <form id="searchBar" action="#">
                   <input type="text" placeholder="Search">
                   <button><i class="fa fa-search"></i></button>
               </form>
               <div class="mobile-cart-wrap">
-                <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:22px"></i>0</a>
+                <a href="cart.html"><i class="fa fa-shopping-cart"></i>0</a>
               </div>
             </div>
-          </ul>
+          </div>
+
 
           <div class="desktop-search">
             <form id="searchBar" action="#">
@@ -38,7 +41,7 @@
             </form>
           </div>
           <div class="cart-button-wrap">
-            <a href="cart.html" style="font-size:16px"><i class="fa fa-shopping-cart" style="font-size:26px"></i>0</a>
+            <a href="cart.html"><i class="fa fa-shopping-cart"></i>0</a>
           </div>
 
           <div class="mobile-menu" id="toggleButton">
@@ -49,10 +52,10 @@
         </nav>
         <div class="landing-content">
           <h1 id="home-heading">GAMEHUB</h1>
-          <h5 id="home-sub">The universe of games</h5>
+          <h2 id="home-sub">The universe of games</h2>
           <div id="landing-btn-wrapper">
-            <a href="games.html"><button id="all-games-btn" class="btn landing-btn">ALL GAMES</button></a>
-            <a href="contact.html"><button id="sell-btn" class="btn landing-btn">SELL GAMES</button></a>
+            <button id="all-games-btn" class="btn landing-btn"><a class="btn-link" href="games.html">ALL GAMES</a></button>
+            <button id="sell-btn" class="btn landing-btn"><a class="btn-link" href="contact.html">SELL GAMES</a></button>
           </div>
         </div>
       </div>
@@ -62,7 +65,7 @@
           <div class="games-container">
             <div class="heading">
               <h3 class="featured-heading">FEATURED GAMES</h3>
-              <a href="games.html"><button class="heading-btn btn">Discover More</button></a>
+              <button class="heading-btn btn"><a class="btn-link" href="games.html">Discover More</a></button>
             </div>
             <div class="heading-line"></div>
             <div class="games-grid">
@@ -72,7 +75,7 @@
                   <div class="game-spec">
                     <h5 class="game-title">Cyberpunk</h5>
                     <h5 class="game-price">$50.00</h5>
-                    <button class="game-btn btn">Details</button>
+                    <button class="game-btn btn"><a class="btn-link" href="game-specific.html">Details</a></button>
                   </div>
                 </a>
               </div>
@@ -80,9 +83,9 @@
                 <a class="game-link" href="game-specific.html">
                   <img src="/images/compressed/GameHub_covers6.jpg" alt="Space War" class="game-img">
                   <div class="game-spec">
-                    <h5 class="game-title">Space War</h5>
-                    <h5 class="game-price">$45.00</h5>
-                    <button class="game-btn btn">Details</button>
+                    <h4 class="game-title">Space War</h4>
+                    <h4 class="game-price">$45.00</h4>
+                    <button class="game-btn btn"><a class="btn-link" href="game-specific.html">Details</a></button>
                   </div>
                 </a>
               </div>
@@ -90,9 +93,9 @@
                 <a class="game-link" href="game-specific.html">
                   <img src="/images/compressed/GameHub_covers.jpg" alt="Ping Pong" class="game-img">
                   <div class="game-spec">
-                    <h5 class="game-title">Ping Pong</h5>
-                    <h5 class="game-price">$30.00</h5>
-                    <button class="game-btn btn">Details</button>
+                    <h4 class="game-title">Ping Pong</h4>
+                    <h4 class="game-price">$30.00</h4>
+                    <button class="game-btn btn"><a class="btn-link" href="game-specific.html">Details</a></button>
                   </div>
                 </a>
               </div>
@@ -100,19 +103,19 @@
                 <a class="game-link" href="game-specific.html">
                   <img src="/images/compressed/GameHub_covers4.jpg" alt="Furious" class="game-img">
                   <div class="game-spec">
-                    <h5 class="game-title">Furious</h5>
-                    <h5 class="game-price">$37.00</h5>
-                    <button class="game-btn btn">Details</button>
+                    <h4 class="game-title">Furious</h4>
+                    <h4 class="game-price">$37.00</h4>
+                    <button class="game-btn btn"><a class="btn-link" href="game-specific.html">Details</a></button>
                   </div>
                 </a>
               </div>
             </div>
           </div>
           <div class="container-box">
-            <h2 class="heading-2">SELL YOUR GAMES</h2>
+            <h5 class="heading-2">SELL YOUR GAMES</h5>
             <p> Finished your game? You can sell your used games here at GameHub.</p>
               <p>Get in touch by clicking the button below.</p>
-              <a href="contact.html"><button class="gen-btn btn">Get in touch</button></a>
+              <button class="gen-btn btn"><a class="btn-link" href="contact.html">Get in touch</a></button>
           </div>
         </main>
       </div>
