@@ -76,6 +76,9 @@ body {
 .heading-container {
     display: flex;
 }
+label {
+    font-size: 12px;
+}
 
 /* LANDING PAGE */
 #landing-bg {
@@ -464,7 +467,7 @@ i.fa-trash {
     width: calc(100% - 20px);
 }
 .check-heading-1 {
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .flex-col, .col {
@@ -692,6 +695,10 @@ p.about-text {
 .checkout-headings h5 {
     font-weight: 400;
 }
+.checkout-h2 {
+    font-size: 18px;
+    font-weight: 300;
+}
 #continueBtn {
     background-color: transparent;
     border-bottom: 3px solid white;
@@ -856,10 +863,18 @@ i {
     .games-grid {
         grid-template-columns: 50% 50%;
     }
+    /* label fontsize */
+    label {
+        font-size: 14px;
+    }
 }
 @media (min-width: 768px) {
     .games-grid {
         grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+    /* label fontsize */
+    label {
+        font-size: 16px;
     }
 }
 @media (min-width: 960px) {
