@@ -28,9 +28,13 @@ body {
     margin-left: auto;
 
 }
-.game-link {
+.game-link,
+.buy-btn a {
     text-decoration: none;
-    color: white;
+    color: #000;
+    display: inline-block;
+    width: 100%;
+    padding: 7px 0 7px 0;
 }
 .form-half-col,
 .form-col,
@@ -65,6 +69,7 @@ body {
     transition: 0.2s ease-in-out;
 }
 .btn-link {
+    display: block;
     text-decoration: none;
     color: inherit;
 }
@@ -74,7 +79,7 @@ body {
 
 /* LANDING PAGE */
 #landing-bg {
-    background-image: url(/images/compressed/spacegameuniverse-mobile.png);
+    background-image: url(/images/compressed/Pi7_Image_spacegameuniverse-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -139,9 +144,12 @@ body {
 #navWrap.active {
     display: block;
 }
-.nav-list .list-item {
-    display: block;
+.nav-link {
     padding: 20px 10px;
+    display: block;
+}
+.list-item {
+    list-style: none;
 }
 .list-item:hover {
     background-color: #5147DB;
@@ -164,11 +172,18 @@ body {
     align-items: center;
     margin: 0 auto;
 }
+.search-btn {
+    margin-left: 5px;
+    cursor: pointer;
+}
 .cart-button-wrap {
     display: none;
 }
 .mobile-cart-wrap{
     margin-right: 15px;
+}
+#desktopCart {
+    display: none;
 }
 .fa-shopping-cart {
     color: white;
@@ -185,11 +200,9 @@ body {
     color: white;
     padding: 10px;
 }
-.mobile-search button {
+.mobile-search {
     background-color: transparent;
     border: none;
-    cursor: pointer;
-    margin-left: 10px;
 }
 .fa-search {
     color: white;
@@ -229,13 +242,17 @@ body {
     letter-spacing: 1px;
     margin-left: 5px;
     margin-right: 5px;
+    display: inline-block;
 }
 #all-games-btn {
     background-color: #dedede;
+    color: black;
+    border: 2px solid #dedede;
 }
 #all-games-btn:hover {
     background-color: #a5a5a5;
     color: white;
+    border: 2px solid #a5a5a5;
 }
 #sell-btn {
     background-color: transparent;
@@ -325,7 +342,7 @@ main {
     margin: 10px 0 5px 0;
 }
 .game-btn {
-    padding: 7px 0 7px 0;
+    display: inline-block;
     width: 100%;
     font-weight: 700;
     border-radius: 3px;
@@ -356,6 +373,10 @@ p {
 .gen-btn {
     margin-top: 1rem;
     padding: 6px 6px;
+    max-width: 140px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    color: #000;
 }
 
 /* SHOPPING CART */
@@ -387,7 +408,11 @@ p {
 .img-box {
     margin-bottom: -5px;
 }
+.cart-game-img {
+    height: 60px;
+}
 .action {
+    font-size: 16px;
     cursor: pointer;
     border-bottom: 1px solid white;
 }
@@ -438,6 +463,10 @@ i.fa-trash {
     justify-content: center;
     width: calc(100% - 20px);
 }
+.check-heading-1 {
+    font-size: 28px;
+}
+
 .flex-col, .col {
     display: flex;
     flex-direction: column;
@@ -556,7 +585,11 @@ label.radio input:checked+span {
     font-weight: 800;
 }
 .buy-btn {
-    padding: 8px 12px;
+    display: inline-block;
+}
+.buy-btn a {
+    padding-right: 7px;
+    padding-left: 7px;
 }
 .game-desc {
     font-family: "Epilogue", sans-serif;
@@ -670,6 +703,7 @@ p.about-text {
     line-height: 1.5;
     cursor: pointer;
     font-size: 16px;
+    text-decoration: none;
 }
 
 /* GENERAL FORM STYLES */
@@ -711,9 +745,10 @@ p.about-text {
     max-width: 100%;
 }
 .form-control {
+    margin-top: 5px;
     height: 38px;
     width: 100%;
-    padding: 0.375rem 0.75rem;
+    padding: 0.375rem 0.35rem;
     border-radius: 4px;
 
 }
@@ -724,6 +759,13 @@ p.about-text {
 textarea.form-control {
     height: inherit;
 }
+input::placeholder,
+textarea::placeholder {
+    font-family: "Epilogue", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
 #message {
     resize: vertical;
 }
@@ -822,6 +864,9 @@ i {
 }
 @media (min-width: 960px) {
     /* Desktop Background */
+    #body-bg-img {
+        background-image: url(/images/compressed/Pi7_Image_gamehub-bg.png);
+    }
     #landing-bg {
         background-image: url(/images/compressed/game-controller.png);
     }
@@ -835,7 +880,6 @@ i {
     .navbar {
         background-color: transparent;
         display: inline-flex;
-        font-size: 20px;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
@@ -851,15 +895,18 @@ i {
         padding-top: 0;
         width: auto;
     }
-    .nav-list .list-item {
-        padding-right: 20px;
-        padding-left: 20px;
+    .nav-link {
+        padding-right: 25px;
+        padding-left: 25px;
     }
     .mobile-search {
         display: none;
     }
     .desktop-search {
         display: flex;
+    }
+    #desktopCart {
+        display: block;
     }
     .cart-button-wrap {
         display: block;

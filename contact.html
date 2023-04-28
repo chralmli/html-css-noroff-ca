@@ -10,88 +10,98 @@
   </head>
   <body>
     <div id="body-bg-img"></div>
-      <nav class="navbar navbar-fixed">
-        <div id="logo-wrap">
-          <a href="index.html"><img src="/images/gamehub-white-logo.png" id="logo" alt="Gamehub Logo"></a>
-        </div>
+    <nav class="navbar navbar-fixed">
+      <div id="logo-wrap">
+        <a href="index.html"><img src="/images/gamehub-white-logo.png" id="logo" alt="Gamehub Logo"></a>
+      </div>
+      <div id="navWrap">
         <ul class="nav-list" id="navList">
-          <a href="index.html"><li class="list-item">Home</li></a>
-          <a href="games.html"><li class="list-item">Games</li></a>
-          <a href="about.html"><li class="list-item">About</li></a>
-          <a href="contact.html"><li class="list-item">Contact</li></a>
-          <div class="mobile-search">
-            <form id="searchBar" action="#">
-                <input type="text" placeholder="Search">
-                <button><i class="fa fa-search"></i></button>
-            </form>
-            <div class="mobile-cart-wrap">
-              <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:22px"></i>0</a>
-            </div>
-          </div>
+          <li class="list-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="list-item"><a class="nav-link" href="games.html">Games</a></li>
+          <li class="list-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="list-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-        
-        <div class="desktop-search">
-          <form id="searchBar" action="#">
-              <input type="text" placeholder="Search">
-              <button><i class="fa fa-search"></i></button>
+        <div class="mobile-search">
+          <form class="searchBar" action="#">
+            <label for="searchBar"></label>
+              <input id="searchBar" type="text" placeholder="Search">
+              <div class="search-btn">
+                <a><i class="fa fa-search"></i></a>
+              </div>
           </form>
+          <div class="mobile-cart-wrap">
+            <a href="cart.html"><i class="fa fa-shopping-cart"></i>0</a>
+          </div>
         </div>
-        <div class="cart-button-wrap">
-          <a href="cart.html" style="font-size:16px"><i class="fa fa-shopping-cart" style="font-size:26px"></i>0</a>
-        </div>
-        <div class="mobile-menu" id="toggleButton">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
+      </div>
+      <div class="desktop-search">
+        <form class="searchBar" action="#">
+          <label for="lgSearchBar"></label>
+            <input id="lgSearchBar" type="text" placeholder="Search">
+            <div class="search-btn">
+              <a><i class="fa fa-search"></i></a>
+            </div>
+        </form>
+      </div>
+      <div class="cart-a-wrap" id="desktopCart">
+        <a href="cart.html"><i class="fa fa-shopping-cart"></i>0</a>
+      </div>
+      <div class="mobile-menu" id="toggleButton">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
     <main>
       <div class="container">
         <div class="heading-container contact-heading">
           <h1 class="contact-h1">GET IN TOUCH</h1>
-        </div>
-        
+        </div>  
         <div class="contact-icons-flex">
           <div class="flex-group">
-            <img src="/images/violet-contact-icon-1.png" alt="" class="contact-icon">
-            <h4 class="contact-info-heading">ADDRESS</h4>
+            <img src="/images/violet-contact-icon-1.png" alt="Location Icon" class="contact-icon">
+            <h2 class="contact-info-heading">ADDRESS</h2>
             <span class="contact-info">Game Street 1337, Gametown</span>
           </div>
           <div class="flex-group">
-            <img src="/images/violet-contact-icon-2.png" alt="" class="contact-icon">
-            <h4 class="contact-info-heading">PHONE</h4>
+            <img src="/images/violet-contact-icon-2.png" alt="Phone Icon" class="contact-icon">
+            <h2 class="contact-info-heading">PHONE</h2>
             <span class="contact-info">(727) 451-7800</span>
           </div>
           <div class="flex-group">
-            <img src="/images/violet-contact-icon-3.png" alt="" class="contact-icon">
-            <h4 class="contact-info-heading">EMAIL</h4>
+            <img src="/images/violet-contact-icon-3.png" alt="Email Icon" class="contact-icon">
+            <h2 class="contact-info-heading">EMAIL</h2>
             <span class="contact-info">info@gamehub.com</span>
           </div>
         </div>
         <div class="contact-heading">
-          <h2 class="contact-h2">Message Us</h2>
+          <h3 class="contact-h2">Message Us</h3>
         </div>
         <div class="row">
           <form id="contactForm">
             <div class="form-row">
               <div class="form-half-col">
                 <div class="form-group">
+                  <label for="name">Name</label>
                   <input type="text" id="name" class="form-control" placeholder="Name">
                 </div>
               </div>
               <div class="form-half-col">
                 <div class="form-group">
+                  <label for="email">Email</label>
                   <input type="text" id="email" class="form-control" placeholder="Email">
                 </div>
               </div>
               <div class="form-col">
                 <div class="form-group">
+                  <label for="subject">Subject</label>
                   <input type="text" id="subject" class="form-control" placeholder="Subject">
                 </div>
               </div>
               <div class="form-col">
                 <div class="form-group">
-                  <textarea type="text" id="message" class="form-control" placeholder="Message" cols="30" rows="7"></textarea>
+                  <label for="message">Message</label>
+                  <textarea name="text" id="message" class="form-control" placeholder="Message" cols="30" rows="7"></textarea>
                 </div>
               </div>
               <div class="form-col">
@@ -132,6 +142,6 @@
         </p>
       </div>
     </footer>
+    <script src="/js/mobile-menu.js"></script>
   </body>
-  <script src="/js/mobile-menu.js"></script>
 </html>

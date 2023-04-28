@@ -6,131 +6,138 @@
     <meta name="description" content="Your shopping cart is where you can review your selected items before completing your purchase. Make sure you have everything you need and proceed to the secure checkout to complete your order.">
     <title>Cart - GAMEHUB</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script src="https://kit.fontawesome.com/1799f3b83c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="body-bg-img"></div>
-      <nav class="navbar navbar-fixed">
-        <div id="logo-wrap">
-          <a href="index.html"><img src="/images/gamehub-white-logo.png" id="logo" alt="Gamehub Logo"></a>
-        </div>
+    <nav class="navbar navbar-fixed">
+      <div id="logo-wrap">
+        <a href="index.html"><img src="/images/gamehub-white-logo.png" id="logo" alt="Gamehub Logo"></a>
+      </div>
+      <div id="navWrap">
         <ul class="nav-list" id="navList">
-          <a href="index.html"><li class="list-item">Home</li></a>
-          <a href="games.html"><li class="list-item">Games</li></a>
-          <a href="about.html"><li class="list-item">About</li></a>
-          <a href="contact.html"><li class="list-item">Contact</li></a>
-          <div class="mobile-search">
-            <form id="searchBar" action="#">
-                <input type="text" placeholder="Search">
-                <button><i class="fa fa-search"></i></button>
-            </form>
-            <div class="mobile-cart-wrap">
-              <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:22px"></i>0</a>
-            </div>
-          </div>
+          <li class="list-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="list-item"><a class="nav-link" href="games.html">Games</a></li>
+          <li class="list-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="list-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-        
-        <div class="desktop-search">
-          <form id="searchBar" action="#">
-              <input type="text" placeholder="Search">
-              <button><i class="fa fa-search"></i></button>
+        <div class="mobile-search">
+          <form class="searchBar" action="#">
+            <label for="searchBar"></label>
+              <input id="searchBar" type="text" placeholder="Search">
+              <div class="search-btn">
+                <a><i class="fa fa-search"></i></a>
+              </div>
           </form>
+          <div class="mobile-cart-wrap">
+            <a href="cart.html"><i class="fa fa-shopping-cart"></i>0</a>
+          </div>
         </div>
-        <div class="cart-button-wrap">
-          <a href="cart.html" style="font-size:16px"><i class="fa fa-shopping-cart" style="font-size:26px"></i>0</a>
-        </div>
-        <div class="mobile-menu" id="toggleButton">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
+      </div>
+      <div class="desktop-search">
+        <form class="searchBar" action="#">
+          <label for="lgSearchBar"></label>
+            <input id="lgSearchBar" type="text" placeholder="Search">
+            <div class="search-btn">
+              <a><i class="fa fa-search"></i></a>
+            </div>
+        </form>
+      </div>
+      <div class="cart-a-wrap" id="desktopCart">
+        <a href="cart.html"><i class="fa fa-shopping-cart"></i>0</a>
+      </div>
+      <div class="mobile-menu" id="toggleButton">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
     <main>
           <div class="cart-container">
             <div class="cart-content-container">
               <div class="heading check-heading">
-                <h3 class="check-heading-1">Shopping Cart</h3>
-                <h5 class="action">Remove All</h5>
+                <h1 class="check-heading-1">Shopping Cart</h1>
+                <h2 class="action">Remove All</h2>
             </div>
             <div class="heading-line"></div>
               <div class="cart-items">
                 <div class="img-box">
-                  <img src="images/compressed/GameHub_covers5.jpg" alt="" height="65px">
+                  <img class="cart-game-img" src="images/compressed/GameHub_covers5.jpg" alt="Assassin">
                 </div>
                 <div class="desc">
-                  <h1 class="title">Assassin</h1>
-                  <h3 class="platform">PC</h3>
+                  <h2 class="title">Assassin</h2>
+                  <h2 class="platform">PC</h2>
                 </div>
                 <div class="counter">
-                  <i class="fa-solid fa-plus"></i>
+                  <i class="fa fa-plus"></i>
                   <div class="count">1</div>
-                  <i class="fa-solid fa-minus"></i>
+                  <i class="fa fa-minus"></i>
                 </div>
                 <div class="prices">
                   <div class="amount">$50.00</div>
                 </div>
                 <div class="remove">
-                  <i class="fa-solid fa-trash"></i>
+                  <i class="fa fa-trash"></i>
                 </div>
             </div>
             <div class="cart-items">
               <div class="img-box">
-                <img src="images/compressed/GameHub_covers4.jpg" alt="" height="60px">
+                <img class="cart-game-img" src="images/compressed/GameHub_covers4.jpg" alt="Furious">
               </div>
               <div class="desc">
-                <h1 class="title">Furious</h1>
-                <h3 class="platform">PS5</h3>
+                <h2 class="title">Furious</h2>
+                <h2 class="platform">PS5</h2>
               </div>
               <div class="counter">
-                <i class="fa-solid fa-plus"></i>
+                <i class="fa fa-plus"></i>
                 <div class="count">1</div>
-                <i class="fa-solid fa-minus"></i>
+                <i class="fa fa-minus"></i>
               </div>
               <div class="prices">
-                <div class="amount">$35.00</div>
+                <div class="amount">$25.00</div>
               </div>
               <div class="remove">
-                <i class="fa-solid fa-trash"></i>
+                <i class="fa fa-trash"></i>
               </div>
             </div>
             <div class="cart-items">
               <div class="img-box">
-                <img src="images/compressed/GameHub_covers2.jpg" alt="" height="60px">
+                <img class="cart-game-img" src="images/compressed/GameHub_covers2.jpg" alt="Super Duper">
               </div>
               <div class="desc">
-                <h1 class="title">Super Duper</h1>
-                <h3 class="platform">Nintendo</h3>
+                <h2 class="title">Super Duper</h2>
+                <h2 class="platform">Nintendo</h2>
               </div>
               <div class="counter">
-                <i class="fa-solid fa-plus"></i>
+                <i class="fa fa-plus"></i>
                 <div class="count">1</div>
-                <i class="fa-solid fa-minus"></i>
+                <i class="fa fa-minus"></i>
               </div>
               <div class="prices">
                 <div class="amount">$19.00</div>
               </div>
               <div class="remove">
-                <i class="fa-solid fa-trash"></i>
+                <i class="fa fa-trash"></i>
               </div>
             </div>
             <div class="cart-items">
               <div class="img-box">
-                <img src="images/compressed/GameHub_covers10.jpg" alt="" height="60px">
+                <img class="cart-game-img" src="images/compressed/GameHub_covers10.jpg" alt="Forge Legend">
               </div>
               <div class="desc">
-                <h1 class="title">Forge Legend</h1>
-                <h3 class="platform">XBOX</h3>
+                <h2 class="title">Forge Legend</h2>
+                <h2 class="platform">XBOX</h2>
               </div>
               <div class="counter">
-                <i class="fa-solid fa-plus"></i>
+                <i class="fa fa-plus"></i>
                 <div class="count">1</div>
-                <i class="fa-solid fa-minus"></i>
+                <i class="fa fa-minus"></i>
               </div>
               <div class="prices">
-                <div class="amount">$37.00</div>
+                <div class="amount">$27.00</div>
               </div>
               <div class="remove">
-                <i class="fa-solid fa-trash"></i>
+                <i class="fa fa-trash"></i>
               </div>
             </div>
             </div>
@@ -140,32 +147,36 @@
                 <div class="form-row">
                   <div class="form-col">
                     <div class="form-group">
-                      <h3 class="col">Card Details</h3>
+                      <h2 class="col">Card Details</h2>
                     </div>
                   </div>
                   <div class="payment-radio form-group">
-                    <label class="radio"><input type="radio" name="card"><span><img width="35" src="https://img.icons8.com/officel/48/000000/paypal.png"></span></label>
-                    <label class="radio"><input type="radio" name="card"><span><img width="35" src="https://img.icons8.com/officel/48/000000/mastercard.png"></span></label>
-                    <label class="radio"><input type="radio" name="card"><span><img width="35" src="https://img.icons8.com/officel/48/000000/bitcoin.png"></span></label>
-                    <label class="radio"><input type="radio" name="card"><span><img width="35" src="https://img.icons8.com/officel/48/000000/visa.png"></span></label>
+                    <label class="radio"><input type="radio" name="card"><span><img width="25" src="https://img.icons8.com/officel/48/000000/paypal.png" alt="Paypal"></span></label>
+                    <label class="radio"><input type="radio" name="card"><span><img width="25" src="https://img.icons8.com/officel/48/000000/mastercard.png" alt="Mastercard payment"></span></label>
+                    <label class="radio"><input type="radio" name="card"><span><img width="25" src="https://img.icons8.com/officel/48/000000/bitcoin.png" alt="Pay with Bitcoin"></span></label>
+                    <label class="radio"><input type="radio" name="card"><span><img width="25" src="https://img.icons8.com/officel/48/000000/visa.png" alt="Visa Payment"></span></label>
                   </div>
                   <div class="form-col">
                     <div class="form-group">
+                      <label for="cardHolder">Name on card</label>
                       <input type="text" id="cardHolder" class="form-control" placeholder="Name on card">
                     </div>
                   </div>
                   <div class="form-col">
                     <div class="form-group">
+                      <label for="cardNumber">Card number</label>
                       <input type="text" id="cardNumber" class="form-control" placeholder="Card number">
                     </div>
                   </div>
                   <div class="form-half-col">
                     <div class="form-group">
+                      <label for="expDate">Expiration date</label>
                       <input type="text" id="expDate" class="form-control" placeholder="Expiration date">
                     </div>
                   </div>
                   <div class="form-half-col">
                     <div class="form-group">
+                      <label for="cvv">CVV</label>
                       <input type="text" id="cvv" class="form-control" placeholder="CVV">
                     </div>
                   </div>
@@ -174,7 +185,7 @@
                     <div class="form-group">
                       <div class="price-info form-control"><span>Subtotal</span><span>$151.00</span></div>
                       <div class="price-info form-control"><span>Shipping</span><span>$12.00</span></div>
-                      <div class="price-info total form-control"><span>Total</span><span>$183.00</span></div>
+                      <div class="price-info total form-control"><span>Total</span><span>$182.00</span></div>
                     </div>
                   </div>
                   <div class="form-col">
@@ -221,10 +232,10 @@
           </a>
         </div>
         <p class="cp-text">
-          © Copyright 2023 Christian Almli
+          © Copyright 2022 Christian Almli
         </p>
       </div>
     </footer>
+    <script src="/js/mobile-menu.js"></script>
   </body>
-  <script src="/js/mobile-menu.js"></script>
 </html>

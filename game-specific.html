@@ -10,45 +10,52 @@
   </head>
   <body>
     <div id="body-bg-img"></div>
-      <nav class="navbar navbar-fixed">
-        <div id="logo-wrap">
-          <a href="index.html"><img src="/images/gamehub-white-logo.png" id="logo" alt="Gamehub Logo"></a>
-        </div>
+    <nav class="navbar navbar-fixed">
+      <div id="logo-wrap">
+        <a href="index.html"><img src="/images/gamehub-white-logo.png" id="logo" alt="Gamehub Logo"></a>
+      </div>
+      <div id="navWrap">
         <ul class="nav-list" id="navList">
-          <a href="index.html"><li class="list-item">Home</li></a>
-          <a href="games.html"><li class="list-item">Games</li></a>
-          <a href="about.html"><li class="list-item">About</li></a>
-          <a href="contact.html"><li class="list-item">Contact</li></a>
-          <div class="mobile-search">
-            <form id="searchBar" action="#">
-                <input type="text" placeholder="Search">
-                <button><i class="fa fa-search"></i></button>
-            </form>
-            <div class="mobile-cart-wrap">
-              <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:22px"></i>0</a>
-            </div>
-          </div>
+          <li class="list-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="list-item"><a class="nav-link" href="games.html">Games</a></li>
+          <li class="list-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="list-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-        
-        <div class="desktop-search">
-          <form id="searchBar" action="#">
-              <input type="text" placeholder="Search">
-              <button><i class="fa fa-search"></i></button>
+        <div class="mobile-search">
+          <form class="searchBar" action="#">
+            <label for="searchBar"></label>
+              <input id="searchBar" type="text" placeholder="Search">
+              <div class="search-btn">
+                <a><i class="fa fa-search"></i></a>
+              </div>
           </form>
+          <div class="mobile-cart-wrap">
+            <a href="cart.html"><i class="fa fa-shopping-cart"></i>0</a>
+          </div>
         </div>
-        <div class="cart-button-wrap">
-          <a href="cart.html" style="font-size:16px"><i class="fa fa-shopping-cart" style="font-size:26px"></i>0</a>
-        </div>
-        <div class="mobile-menu" id="toggleButton">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
+      </div>
+      <div class="desktop-search">
+        <form class="searchBar" action="#">
+          <label for="lgSearchBar"></label>
+            <input id="lgSearchBar" type="text" placeholder="Search">
+            <div class="search-btn">
+              <a><i class="fa fa-search"></i></a>
+            </div>
+        </form>
+      </div>
+      <div class="cart-a-wrap" id="desktopCart">
+        <a href="cart.html"><i class="fa fa-shopping-cart"></i>0</a>
+      </div>
+      <div class="mobile-menu" id="toggleButton">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
     <main>
       <div class="game-container">
         <div class="left-col">
-          <img src="/images/compressed/GameHub_covers6.jpg" alt="" class="game-img">
+          <img src="/images/compressed/GameHub_covers6.jpg" alt="Space War" class="game-img">
         </div>
         <div class="right-col">
           <div class="info-wrap">
@@ -56,8 +63,8 @@
             <span class="spec-platform">Platform: PC</span>
             <span class="price">$40.00</span>
           </div>
-          <div class="buy-btn-wrap">
-            <a href="cart.html"><button class="buy-btn btn">Buy now</button></a>
+          <div class="buy-btn-wrap buy-btn btn">
+            <a href="cart.html">Buy now</a>
           </div>
           <div class="game-desc">
             <p>Battle your friends in 3D space battles. Fight as fleets of starships, battle as an alien race or customize your ship with powerful weapons and upgrades.</p> 
@@ -95,6 +102,6 @@
         </p>
       </div>
     </footer>
+    <script src="/js/mobile-menu.js"></script>
   </body>
-  <script src="/js/mobile-menu.js"></script>
 </html>

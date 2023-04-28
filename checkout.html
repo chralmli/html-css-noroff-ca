@@ -10,52 +10,59 @@
   </head>
   <body>
     <div id="body-bg-img"></div>
-      <nav class="navbar navbar-fixed">
-        <div id="logo-wrap">
-          <a href="index.html"><img src="/images/gamehub-white-logo.png" id="logo" alt="Gamehub Logo"></a>
-        </div>
+    <nav class="navbar navbar-fixed">
+      <div id="logo-wrap">
+        <a href="index.html"><img src="/images/gamehub-white-logo.png" id="logo" alt="Gamehub Logo"></a>
+      </div>
+      <div id="navWrap">
         <ul class="nav-list" id="navList">
-          <a href="index.html"><li class="list-item">Home</li></a>
-          <a href="games.html"><li class="list-item">Games</li></a>
-          <a href="about.html"><li class="list-item">About</li></a>
-          <a href="contact.html"><li class="list-item">Contact</li></a>
-          <div class="mobile-search">
-            <form id="searchBar" action="#">
-                <input type="text" placeholder="Search">
-                <button><i class="fa fa-search"></i></button>
-            </form>
-            <div class="mobile-cart-wrap">
-              <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:22px"></i>0</a>
-            </div>
-          </div>
+          <li class="list-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="list-item"><a class="nav-link" href="games.html">Games</a></li>
+          <li class="list-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="list-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-        
-        <div class="desktop-search">
-          <form id="searchBar" action="#">
-              <input type="text" placeholder="Search">
-              <button><i class="fa fa-search"></i></button>
+        <div class="mobile-search">
+          <form class="searchBar" action="#">
+            <label for="searchBar"></label>
+              <input id="searchBar" type="text" placeholder="Search">
+              <div class="search-btn">
+                <a><i class="fa fa-search"></i></a>
+              </div>
           </form>
+          <div class="mobile-cart-wrap">
+            <a href="cart.html"><i class="fa fa-shopping-cart"></i>0</a>
+          </div>
         </div>
-        <div class="cart-button-wrap">
-          <a href="cart.html" style="font-size:16px"><i class="fa fa-shopping-cart" style="font-size:26px"></i>0</a>
-        </div>
-        <div class="mobile-menu" id="toggleButton">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
+      </div>
+      <div class="desktop-search">
+        <form class="searchBar" action="#">
+          <label for="lgSearchBar"></label>
+            <input id="lgSearchBar" type="text" placeholder="Search">
+            <div class="search-btn">
+              <a><i class="fa fa-search"></i></a>
+            </div>
+        </form>
+      </div>
+      <div class="cart-a-wrap" id="desktopCart">
+        <a href="cart.html"><i class="fa fa-shopping-cart"></i>0</a>
+      </div>
+      <div class="mobile-menu" id="toggleButton">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
     <main>
       <div class="container checkout-container">
         <div class="checkout-wrap">
           <img class="checkout-icon" src="/images/checked.png" alt="Checkout icon">
           <div class="checkout-headings">
             <h1 class="checkout-h1">Thank You!</h1>
-            <h5>Your order was confirmed</h5>
+            <h2>Your order was confirmed</h2>
           </div>
-          <div class="check-order"><h5>Order#347648</h5></div>
+          <div class="check-order"><h2>Order#347648</h2></div>
           <div class="check-line"></div>
-          <div class="continue-btn-wrap"><button id="continueBtn">Continue Shopping</button></div>   
+          <div class="continue-btn-wrap"><a href="index.html" id="continueBtn">Continue Shopping</a></div>   
         </div>
       </div>
       
@@ -87,6 +94,6 @@
         </p>
       </div>
     </footer>
+    <script src="/js/mobile-menu.js"></script>
   </body>
-  <script src="/js/mobile-menu.js"></script>
 </html>
